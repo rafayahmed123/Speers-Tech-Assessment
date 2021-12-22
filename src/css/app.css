@@ -30,11 +30,15 @@
 .archive-all-btn {
   padding: 10px;
   border-radius: 5px;
-  background-color: brown;
+  background-color: #D2122E;
   font-size: 1em;
-  color: lightgray;
+  color: #f8f8ff;
   font-weight: bold;
   cursor: pointer
+}
+
+.archive-all-btn:hover{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 #app .container-view {
@@ -82,15 +86,10 @@
 }
 
 .call:hover{
-  box-shadow: 1px 1px rgb(215, 215, 215);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   cursor: pointer;
 }
 
-.date {
-  font-size: 12;
-  color: 'gray';
-  background-color: "yellow";
-}
 
 
 

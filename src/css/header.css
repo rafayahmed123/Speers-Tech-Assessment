@@ -4,7 +4,7 @@ header {
   padding: 20px 0;
   text-align: center;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-  background-color: brown;
+  background-color: #D2122E;
 }
 
 header svg {
@@ -21,17 +21,27 @@ header svg {
 }
 
 .archive {
-  margin-right: 2em;
+  margin-right: 1em;
   font-size: 1em;
-  color: lightgray;
+  color: #f8f8ff;
   font-weight: bold;
-  cursor: pointer
+  cursor: pointer;
+  padding: 8px;
+}
+
+.archive:hover{
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
 }
 
 .inbox {
-  margin-right: 2em;
+  margin-right: 0.5em;
   font-size: 1em;
-  color: lightgray;
+  color: #f8f8ff;
   font-weight: bold;
-  cursor: pointer
+  cursor: pointer;
+  padding: 8px;
+}
+
+.inbox:hover{
+  /* box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px; */
 }

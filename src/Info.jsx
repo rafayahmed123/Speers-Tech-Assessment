@@ -18,11 +18,15 @@ const Info = (props) => {
                 props.showCalls ? props.archiveCall(call.id) : props.unArchiveCall(call.id);
               }}
             >
-              <div style={{ marginLeft: 10, marginRight: 10, width: 20 }}>
+              <div className="duration-icon-container" style={{ marginLeft: 10, marginRight: 10, width: 20 }}>
                 <BiPhoneIncoming style={{ color: "red", width: 20 }} />
+                <div className="duration" style={{fontSize: 11, color:'gray', textAlign:'center', marginTop: '1em'}}>
+                  {call.duration}
+                </div>
               </div>
   
               <div
+                className='from-to-container'
                 style={{
                   justifyContent: "center",
                   alignItems: "center",
@@ -32,6 +36,7 @@ const Info = (props) => {
               >
                 {call.from}
                 <div
+                  className="to"
                   style={{
                     fontWeight: "500",
                     marginTop: 5,
@@ -59,6 +64,10 @@ const Info = (props) => {
         );
       });
       return mapped
+  }
+
+  const convertSeconds = () => {
+    
   }
 
   return (

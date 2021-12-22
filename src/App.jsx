@@ -172,7 +172,7 @@ const App = () => {
         )}
       </div>
       <div className="container-view">
-        <Info visible={visible} calls={calls} showCalls={showCalls} formatTime={formatTime} archiveCall={archiveCall} unArchiveCall={unArchiveCall} />
+        <Info visible={visible} calls={calls} showCalls={showCalls} formatTime={formatTime} archiveCall={archiveCall} unArchiveCall={unArchiveCall}/>
       </div>
     </div>
   );
