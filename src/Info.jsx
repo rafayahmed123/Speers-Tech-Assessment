@@ -52,7 +52,7 @@ const Info = (props) => {
                   fontSize: 12,
                 }}
               >
-                {call.created_at.substring(11, 16)}
+                {props.formatTime(call.created_at.substring(11, 16))}
               </div>
             </div>
           </div>

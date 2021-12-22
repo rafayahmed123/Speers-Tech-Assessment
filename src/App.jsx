@@ -129,6 +129,22 @@ const App = () => {
     setVisible(calls);
     setShowCalls(true);
   };
+
+  const formatTime = (time) => {
+    let newTime = ''
+    let hours = ''
+    if (time.charAt(0) === '0'){
+      newTime = time.substring(1)
+      hours = newTime.substring(0,1)
+      newTime = hours + time.substring(2) + " AM"
+    }
+    else{
+      hours = time.substring(0,2)
+      hours = parseInt(hours) - 12
+      newTime = hours + time.substring(2) + " PM"
+    }
+    return newTime
+  }
          
 
   return (
@@ -156,7 +172,7 @@ const App = () => {
         )}
       </div>
       <div className="container-view">
-        <Info visible={visible} calls={calls} showCalls={showCalls} archiveCall={archiveCall} unArchiveCall={unArchiveCall}/>
+        <Info visible={visible} calls={calls} showCalls={showCalls} formatTime={formatTime} archiveCall={archiveCall} unArchiveCall={unArchiveCall} />
       </div>
     </div>
   );
