@@ -2,7 +2,7 @@
   position: absolute;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   left: 0;
   top: 0;
   right: 0;
@@ -13,13 +13,78 @@
   width: 376px;
   height: 666px;
   z-index: 100;
-
   background: white;
   border-radius: 3px;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, .9);
+  overflow-y: scroll;
+}
+
+.archive-all-container {
+  display: flex;
+  /* background-color: yellow; */
+  justify-content: center;
+  align-items: center;
+  height: 50px
+}
+
+.archive-all-btn {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: brown;
+  font-size: 1em;
+  color: lightgray;
+  font-weight: bold;
+  cursor: pointer
 }
 
 #app .container-view {
-  padding: 20px;
+  height: 555px;
+  padding: 10px;
+  /* width:  */
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: 'scroll';
+
 }
+
+.call-container {
+  height: 15%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: yellow; */
+}
+
+
+ .call {
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70%;
+  width: 100%;
+  border-radius: 10px;
+  border: solid gainsboro;
+  border-width: 1px;
+}
+
+.call:hover{
+  box-shadow: 1px 1px rgb(215, 215, 215);
+  cursor: pointer;
+}
+
+.date {
+  font-size: 12;
+  color: 'gray';
+  background-color: "yellow";
+}
+
+
+
+
 
