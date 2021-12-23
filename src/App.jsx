@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { BiPhoneIncoming } from "react-icons/bi";
 import ReactDOM from "react-dom";
 
 import Header from "./Header.jsx";
